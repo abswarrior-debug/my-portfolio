@@ -15,13 +15,19 @@
         .section-title { margin-top: 70px; color: #f8fafc; font-size: 2.2em; font-weight: 700; position: relative; padding-bottom: 10px; }
         .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: #38bdf8; margin: 10px auto 0 auto; border-radius: 2px; }
         
-        /* قسم الخدمات الجديد */
+        /* قسم الخدمات */
         .services-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 40px; max-width: 1200px; margin: 0 auto; }
         .service-card { background: #1e293b; padding: 30px 20px; border-radius: 16px; border: 1px solid #334155; text-align: right; transition: all 0.3s ease; }
         .service-card:hover { border-color: #38bdf8; transform: translateY(-3px); }
         .service-card h3 { color: #38bdf8; margin-top: 0; font-size: 1.3em; font-weight: 600; }
         .service-card p { color: #94a3b8; font-size: 0.95em; line-height: 1.7; margin: 0; }
 
+        /* قسم نبذة عني الجديد */
+        .about-section { background: #1e293b; padding: 50px 30px; border-top: 1px solid #334155; border-bottom: 1px solid #334155; margin-top: 60px; }
+        .about-content { max-width: 800px; margin: 0 auto; text-align: justify; text-justify: inter-word; line-height: 1.9; color: #cbd5e1; font-size: 1.1em; }
+        .about-content strong { color: #38bdf8; }
+
+        /* معرض الأعمال */
         .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 35px; padding: 40px; max-width: 1200px; margin: 0 auto; }
         .card { background: #1e293b; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25); transition: all 0.3s ease; border: 1px solid #334155; }
         .card:hover { transform: translateY(-8px); border-color: #38bdf8; box-shadow: 0 15px 35px rgba(56, 189, 248, 0.15); }
@@ -41,7 +47,7 @@
         <a href="https://wa.me" target="_blank" class="btn-contact">تواصل معي مباشرة عبر الواتساب</a>
     </header>
 
-    <!-- قسم الخدمات المضاف حديثاً -->
+    <!-- قسم الخدمات -->
     <h2 class="section-title">الخدمات الاستشارية والهندسية</h2>
     <section class="services-container">
         <div class="service-card">
@@ -62,9 +68,19 @@
         </div>
     </section>
 
+    <!-- قسم نبذة عن المهندس المضاف حديثاً -->
+    <section class="about-section">
+        <h2 class="section-title" style="margin-top: 0;">من هو المهندس خلف Salahi3D؟</h2>
+        <div class="about-content">
+            بدأت رحلتي وشغفي في عالم التصميم الهندسي منذ عام <strong>2012</strong>. على مدار أكثر من عقد من الزمان، قمت بابتكار وتطوير عدد لا يحصى من المشاريع السكنية الراقية والمشاريع التجارية الناجحة. 
+            <br><br>
+            عززت خبرتي العملية بالعمل كـ <strong>مدير تنفيذي لشركة تصميم داخلي في دولة الكويت لمدة 3 سنوات</strong>، مما أكسبني فهماً عميقاً لمتطلبات السوق الخليجي، وإدارة المشاريع من الفكرة الفنية وحتى التشطيب النهائي الجاهز للتنفيذ. فخور اليوم ببناء شبكة واسعة من العملاء المستمرين الذين يثقون برؤيتي الهندسية ولمستي الإبداعية الفريدة.
+        </div>
+    </section>
+
+    <!-- معرض الأعمال (جاهز ومعد لاستقبال الصور لاحقاً) -->
     <h2 class="section-title">معرض المشاريع والتصاميم الهندسية</h2>
     <section class="gallery">
-        <!-- المشروع الأول -->
         <div class="card">
             <img src="https://placeholder.com" alt="تصميم معماري خارجي">
             <div class="card-content">
@@ -72,8 +88,6 @@
                 <p>هنا سنكتب وصفاً مختصراً للمشروع، البرامج الهندسية التي استخدمتها وتفاصيل الإضاءة وريندر الواجهات الخارحية.</p>
             </div>
         </div>
-
-        <!-- المشروع الثاني -->
         <div class="card">
             <img src="https://placeholder.com" alt="تصميم داخلي">
             <div class="card-content">
@@ -81,8 +95,6 @@
                 <p>هنا سنكتب وصفاً عن توزيع المساحات، الخامات المستخدمة في التصميم ثلاثي الأبعاد، وتنسيق الأثاث الداخلي المودرن والكلاسيك.</p>
             </div>
         </div>
-
-        <!-- المشروع الثالث -->
         <div class="card">
             <img src="https://placeholder.com" alt="مخطط هندسي">
             <div class="card-content">
