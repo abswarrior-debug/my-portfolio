@@ -11,7 +11,17 @@
         .subtitle { font-size: 1.3em; color: #94a3b8; margin-top: 15px; font-weight: 300; }
         .btn-contact { display: inline-block; background-color: #0ea5e9; color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 25px; transition: all 0.3s ease; box-shadow: 0 4px 14px rgba(14, 165, 233, 0.4); }
         .btn-contact:hover { background-color: #0284c7; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(14, 165, 233, 0.6); }
-        .section-title { margin-top: 60px; color: #f8fafc; font-size: 2.2em; font-weight: 700; }
+        
+        .section-title { margin-top: 70px; color: #f8fafc; font-size: 2.2em; font-weight: 700; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: #38bdf8; margin: 10px auto 0 auto; border-radius: 2px; }
+        
+        /* قسم الخدمات الجديد */
+        .services-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 40px; max-width: 1200px; margin: 0 auto; }
+        .service-card { background: #1e293b; padding: 30px 20px; border-radius: 16px; border: 1px solid #334155; text-align: right; transition: all 0.3s ease; }
+        .service-card:hover { border-color: #38bdf8; transform: translateY(-3px); }
+        .service-card h3 { color: #38bdf8; margin-top: 0; font-size: 1.3em; font-weight: 600; }
+        .service-card p { color: #94a3b8; font-size: 0.95em; line-height: 1.7; margin: 0; }
+
         .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 35px; padding: 40px; max-width: 1200px; margin: 0 auto; }
         .card { background: #1e293b; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25); transition: all 0.3s ease; border: 1px solid #334155; }
         .card:hover { transform: translateY(-8px); border-color: #38bdf8; box-shadow: 0 15px 35px rgba(56, 189, 248, 0.15); }
@@ -19,6 +29,7 @@
         .card-content { padding: 25px; text-align: right; }
         .card-content h3 { margin: 0 0 12px 0; color: #38bdf8; font-size: 1.4em; font-weight: 600; }
         .card-content p { color: #94a3b8; font-size: 0.95em; line-height: 1.7; margin: 0; }
+        
         footer { background-color: #090d16; color: #64748b; padding: 30px; font-size: 0.95em; margin-top: 80px; border-top: 1px solid #1e293b; }
     </style>
 </head>
@@ -27,26 +38,43 @@
     <header>
         <h1>Salahi3D</h1>
         <p class="subtitle">مهندس ومصمّم مجسمات وتصاميم هندسية ثلاثية أبعاد (3D Designer)</p>
-        <!-- تم تعديل الرابط برقم الواتساب الخاص بك بنجاح -->
         <a href="https://wa.me" target="_blank" class="btn-contact">تواصل معي مباشرة عبر الواتساب</a>
     </header>
 
-    <h2 class="section-title">معرض المشاريع والتصاميم الهندسية</h2>
+    <!-- قسم الخدمات المضاف حديثاً -->
+    <h2 class="section-title">الخدمات الاستشارية والهندسية</h2>
+    <section class="services-container">
+        <div class="service-card">
+            <h3>1. الرفع المساحي وتخطيط المساحات</h3>
+            <p>رفع المقاسات الدقيقة من أرض الموقع مباشرة، وتحويلها إلى مخططات معمارية ثنائية الأبعاد (2D) مدروسة بدقة لاستغلال المساحات بشكل ذكي ومريح.</p>
+        </div>
+        <div class="service-card">
+            <h3>2. التصميم المعماري والداخلي 3D</h3>
+            <p>ابتكار الهوية البصرية للمشاريع التجارية والسكنية. نجسد أفكارك إلى واقع افتراضي يتيح لك رؤية الفراغات والكتل قبل بدء البناء الفعلي.</p>
+        </div>
+        <div class="service-card">
+            <h3>3. الإخراج المعماري الواقعي</h3>
+            <p>إنتاج لقطات ومناظير فائقة الدقة (Rendering) تُظهر تفاصيل المواد، الخامات، وتوزيع الإضاءة بدقة متناهية لتتخيل مشروعك بأقرب صورة للواقع.</p>
+        </div>
+        <div class="service-card">
+            <h3>4. المخططات التنفيذية وتوصيف المواد</h3>
+            <p>إعداد المخططات التنفيذية الكاملة (Shop Drawings) الجاهزة للتنفيذ الفوري في الموقع، مع تقديم جداول الخامات لضمان جودة التطبيق والتشطيب.</p>
+        </div>
+    </section>
 
+    <h2 class="section-title">معرض المشاريع والتصاميم الهندسية</h2>
     <section class="gallery">
         <!-- المشروع الأول -->
         <div class="card">
-            <!-- استبدل الرابط أدناه باسم صورتك الأولى لاحقاً -->
             <img src="https://placeholder.com" alt="تصميم معماري خارجي">
             <div class="card-content">
                 <h3>اسم المشروع الهندسي الأول</h3>
-                <p>هنا سنكتب وصفاً مختصراً للمشروع، البرامج الهندسية التي استخدمتها (مثل 3ds Max، Blender، Revit) وتفاصيل الإضاءة وريندر الواجهات الخارحية.</p>
+                <p>هنا سنكتب وصفاً مختصراً للمشروع، البرامج الهندسية التي استخدمتها وتفاصيل الإضاءة وريندر الواجهات الخارحية.</p>
             </div>
         </div>
 
         <!-- المشروع الثاني -->
         <div class="card">
-            <!-- استبدل الرابط أدناه باسم صورتك الثانية لاحقاً -->
             <img src="https://placeholder.com" alt="تصميم داخلي">
             <div class="card-content">
                 <h3>اسم المشروع الهندسي الثاني</h3>
@@ -56,7 +84,6 @@
 
         <!-- المشروع الثالث -->
         <div class="card">
-            <!-- استبدل الرابط أدناه باسم صورتك الثالثة لاحقاً -->
             <img src="https://placeholder.com" alt="مخطط هندسي">
             <div class="card-content">
                 <h3>اسم المشروع الهندسي الثالث</h3>
