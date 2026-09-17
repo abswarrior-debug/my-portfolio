@@ -3,64 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salahi3D</title>
+    <!-- عنوان الموقع الذي يظهر في أعلى المتصفح للزبائن -->
+    <title>معرض أعمال Salahi3D | تصاميم هندسية ثلاثية الأبعاد</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; text-align: center; }
-        header { background-color: #1a1a2e; color: white; padding: 40px 20px; }
-        h1 { margin: 0; font-size: 2.5em; }
-        p { font-size: 1.2em; color: #bbbbbb; }
-        .btn-contact { display: inline-block; background-color: #00b4d8; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 15px; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 40px; max-width: 1200px; margin: 0 auto; }
-        .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .card img { width: 100%; height: 250px; object-fit: cover; background-color: #ddd; }
-        .card-content { padding: 15px; text-align: right; }
-        .card-content h3 { margin: 0 0 10px 0; color: #1a1a2e; }
-        .card-content p { color: #666; font-size: 0.9em; margin: 0; }
-        footer { background-color: #1a1a2e; color: white; padding: 20px; font-size: 0.9em; margin-top: 40px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; text-align: center; }
+        header { background-color: #0f172a; color: white; padding: 60px 20px; }
+        h1 { margin: 0; font-size: 2.8em; color: #f8fafc; }
+        .subtitle { font-size: 1.3em; color: #94a3b8; margin-top: 10px; }
+        .btn-contact { display: inline-block; background-color: #0ea5e9; color: white; padding: 14px 28px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+        .btn-contact:hover { background-color: #0284c7; }
+        .section-title { margin-top: 50px; color: #0f172a; font-size: 2em; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 40px; max-width: 1200px; margin: 0 auto; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 250px; object-fit: cover; background-color: #e2e8f0; }
+        .card-content { padding: 20px; text-align: right; }
+        .card-content h3 { margin: 0 0 10px 0; color: #0f172a; font-size: 1.3em; }
+        .card-content p { color: #64748b; font-size: 0.95em; line-height: 1.6; margin: 0; }
+        footer { background-color: #0f172a; color: #94a3b8; padding: 25px; font-size: 0.9em; margin-top: 60px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>[Salahi3D]</h1>
-        <p>مهندس ومصمّم مجسمات ثلاثية أبعاد (3D Designer)</p>
-        <!-- استبدل الرقم بالأسفل برقم واتسابك الحقيقي ليتمكن الزبائن من مراسلتك مباشرة -->
-        <a href="https://wa.me" class="btn-contact">تواصل معي عبر الواتساب</a>
+        <!-- اسمك التجاري الجديد -->
+        <h1>Salahi3D</h1>
+        <p class="subtitle">مهندس ومصمّم مجسمات وتصاميم هندسية ثلاثية أبعاد</p>
+        
+        <!-- زر الواتساب المباشر للزبائن (تأكد من تعديل الرقم أدناه برقمك الحقيقي مع رمز الدولة بدون أصفار في البداية) -->
+        <a href="https://wa.me" class="btn-contact">تواصل معي مباشرة عبر الواتساب</a>
     </header>
 
-    <h2 style="margin-top: 40px; color: #1a1a2e;">معرض المشاريع والتصاميم</h2>
+    <h2 class="section-title">معرض المشاريع والتصاميم الهندسية</h2>
 
     <section class="gallery">
-        <!-- التصميم الأول -->
+        <!-- المشروع الأول -->
         <div class="card">
-            <img src="https://placeholder.com" alt="تصميم معماري">
+            <img src="https://placeholder.com" alt="تصميم معماري خارجي">
             <div class="card-content">
-                <h3>اسم التصميم الهندسي الأول</h3>
-                <p>هنا يمكنك كتابة وصف مختصر للمشروع، البرامج المستخدمة (مثل 3ds Max أو Blender)، ونوع التصميم (داخلي/خارجي).</p>
+                <h3>اسم المشروع الأول (مثال: تصميم فيلا مودرن)</h3>
+                <p>هنا سنكتب وصفاً مختصراً للمشروع، البرامج الهندسية التي استخدمتها (مثل 3ds Max، Blender، Revit) وتفاصيل الإضاءة والريندر.</p>
             </div>
         </div>
 
-        <!-- التصميم الثاني -->
+        <!-- المشروع الثاني -->
         <div class="card">
             <img src="https://placeholder.com" alt="تصميم داخلي">
             <div class="card-content">
-                <h3>اسم التصميم الهندسي الثاني</h3>
-                <p>هنا يمكنك كتابة وصف مختصر للمشروع الثاني ونبذة عن التفاصيل الهندسية الفنية التي قمت بها.</p>
+                <h3>اسم المشروع الثاني (مثال: تصميم مجلس داخلي)</h3>
+                <p>هنا سنكتب وصفاً عن توزيع المساحات، الخامات المستخدمة في التصميم ثلاثي الأبعاد، وكيف يلبي احتياجات العميل.</p>
             </div>
         </div>
 
-        <!-- التصميم الثالث -->
+        <!-- المشروع الثالث -->
         <div class="card">
-            <img src="https://placeholder.com" alt="تصميم مودرن">
+            <img src="https://placeholder.com" alt="مخطط هندسي">
             <div class="card-content">
-                <h3>اسم التصميم الهندسي الثالث</h3>
-                <p>وصف مختصر للمشروع الثالث وكيف يمكن لهذا التصميم أن يخدم احتياجات الزبائن المستهدفين.</p>
+                <h3>اسم المشروع الثالث (مثال: واجهة مجمع تجاري)</h3>
+                <p>هنا سنضع تفاصيل المشروع الثالث ونبذة عن الابتكار المعماري أو الهندسي الذي قمت بتنفيذه في هذا العمل.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>جميع الحقوق محفوظة © 2026 | معرض أعمال الهندسة ثلاثية الأبعاد</p>
+        <p>جميع الحقوق محفوظة © 2026 | معرض أعمال Salahi3D</p>
     </footer>
 
 </body>
